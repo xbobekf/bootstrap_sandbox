@@ -148,12 +148,14 @@
         <br>
 
         <!-- INLINE FORM -->
-        <form calss="form-inline">
-            <input class="form-control mr-2" type="text" id="username" placeholder="Enter username">
-            <input class="form-control mr-2" type="text" id="password" placeholder="Password">
+        <form class="form-inline">
+            <input class="form-control mr-2" type="text" 
+            id="username" placeholder="Enter username">
+            <input class="form-control mr-2" type="text" 
+            id="password" placeholder="Password">
             <div class="form-check">
                 <label class="form-check-label mr-2">
-                    <input type="checkbox"> Remember me
+                    <input class="form-check-input" type="checkbox"> Remember me
                 </label>
             </div>
 
@@ -165,12 +167,12 @@
 
         <!-- FORM ROW -->
         <form>
-            <div>
-                <div>
-                    <input type="text" placeholder="First name">
+            <div class="form-row">
+                <div class="col">
+                    <input class="form-control" type="text" placeholder="First name">
                 </div>
-                <div>
-                    <input type="text" placeholder="Last name">
+                <div class="col">
+                    <input class="form-control" type="text" placeholder="Last name">
                 </div>
             </div>
         </form>
@@ -179,21 +181,21 @@
         <br>
 
         <!-- VALIDATION -->
-        <div>
+        <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" id="username">
+            <input class="form-control is-valid" type="text" id="username">
         </div>
-        <div>
+        <div class="form-group">
             <label for="password">Password</label>
-            <input type="text" id="password">
-            <div>
+            <input class="form-control is-invalid" type="text" id="password"> <!--if is-invalid removed also the div under will be removed-->
+            <div class="invalid-feedback">
                 Password not strong enough
             </div>
         </div>
-        <div>
+        <div class="form-group">
             <label for="password2">Confirm Password</label>
-            <input type="text" id="password2">
-            <div>
+            <input class="form-control" type="text" id="password2">
+            <div class="invalid-feedback">
                 Password does not match
             </div>
         </div>
